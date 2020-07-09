@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RemoteControl.Domain\RemoteControl.Domain.csproj" />
+    <ProjectReference Include="..\RemoteControl.Infrastructure\RemoteControl.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

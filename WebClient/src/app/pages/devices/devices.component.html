@@ -1,0 +1,33 @@
+<div class="container mx-auto">
+  <p class="mx-auto">Dispositivos conectados</p>
+
+  <div class="d-flex flex-wrap">
+    <div *ngFor="let device of devices" class="card text-center m-2" style="width: 20rem;">
+      <img class="rounded mx-auto d-block" style="max-width: 80%" src="../../../assets/images/computer.png" alt="">
+      <div class="card-body">
+        <h4 class="card-title mx-auto">Detalhes</h4>
+        <h5>
+          <small class="text-muted">Nome do computador </small>
+          <br>
+          {{device.name}}
+        </h5>
+        <h5>
+          <small class="text-muted">Endereço IP </small>
+          <br>
+          {{device.ipAddress}}
+        </h5>
+        <h5>
+          <small class="text-muted">Antivirus </small>
+          <br>
+          {{device.antivirusName}}
+        </h5>
+        <button class="btn btn-primary" (click)="goToDetails(device.connectionId)">Detalhes</button>
+
+      </div>
+      <div class="card-footer">
+        <span>id {{device.connectionId}}</span>
+      </div>
+    </div>
+  </div>
+
+</div>

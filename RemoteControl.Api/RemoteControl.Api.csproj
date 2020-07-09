@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RemoteControl.Application\RemoteControl.Application.csproj" />
+    <ProjectReference Include="..\RemoteControl.Domain\RemoteControl.Domain.csproj" />
+    <ProjectReference Include="..\RemoteControl.Infrastructure\RemoteControl.Infrastructure.csproj" />
+  </ItemGroup>
+
+
+</Project>

@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="card text-center">
+    <div class="card-header">
+      Dispositivo
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="column mx-auto">
+          <h5 class="card-title">Nome: {{device.name}}</h5>
+          <p class="card-text">Endereço: {{device.ipAddress}}</p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" [style.width]="getPercentage()+'%'" aria-valuenow="50" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div>
+          <p class="card-text">{{(device.freeHardDisk/1024).toFixed(2)}}Gb usados
+            / {{(device.hardDisk/1024).toFixed(2)}} Gb Total</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="card-footer text-muted">
+      {{device.connectionId}}
+    </div>
+  </div>
+</div>
